@@ -14,8 +14,8 @@
     "start:prod": "node dist/main",
     "seed-db": "ts-node prisma/seed.ts",
     "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
-    "test": "jest",
-    "test:watch": "jest --watch",
+    "test": "jest --config ./test/jest-unit.json",
+    "test:watch": "jest src --config ./test/jest-unit.json --watch",
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
     "test:e2e": "jest --config ./test/jest-e2e.json"
