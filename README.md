@@ -13,8 +13,7 @@ O projeto NEXUS proposto como forma de avaliação da disciplina **IC045/MATE85 
 
 ## Requisitos do Sistema
 
-A proposta dos requisitos do sistema estão descritos neste <a href="https://docs.google.com/document/d/1o_Z_rzxLml42aq2MRHTFWUXQBtmdDptPtkzB82JUlj4" target="_blank">link</a>.
-Os mesmos serão detalhados em histórias de usuário (em breve).
+A proposta dos requisitos do sistema estão descritos em formato de Histórias do Usuário e podem ser acessos por meio deste <a href="https://docs.google.com/document/d/1hr7hHC0Qqq_lBjf08LLxHLFu91i8_jGJNKX9tGYHiGM" target="_blank">link</a>.
 
 ## Protótipos
 
