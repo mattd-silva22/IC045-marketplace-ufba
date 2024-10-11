@@ -43,4 +43,43 @@ export class UsersService {
             id_papel: user.id_papel
         }
     }
+
+    async update(id: number, user: CreateUserDto) {
+        const updatedUser = await this.prismaService.tbUsuario.update({
+            where: {
+                id: +id
+            },
+            data: {
+                nome: user.nome,
+                img: user.img,
+                email: user.email,
+                senha: user.senha,
+                id_papel: user.id_papel
+            }
+        })
+
+        return {
+            id: updatedUser.id,
+            nome: updatedUser.nome,
+            img: updatedUser.img,
+            email: updatedUser.email,
+            id_papel: updatedUser.id_papel
+        }
+    }
+
+    async delete(id: number) {
+        const user = await this.prismaService.tbUsuario.delete({
+            where: {
+                id: +id
+            }
+        })
+
+        return {
+            id: user.id,
+            nome: user.nome,
+            img: user.img,
+            email: user.email,
+            id_papel: user.id_papel
+        }
+    }
 }
