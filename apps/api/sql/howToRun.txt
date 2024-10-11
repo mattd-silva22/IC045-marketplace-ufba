@@ -1,5 +1,0 @@
-cd ./sql
-
-docker build -t marketplace-db .
-
-docker run -d -p 5432:5432 --name my-marketplace-db marketplace-db
