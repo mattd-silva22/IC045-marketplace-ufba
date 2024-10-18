@@ -27,8 +27,8 @@ async function main() {
   //   },
   // });
 
-  await SeedFields();
-  await SeedTags();
+  await SeedFields(prisma);
+  await SeedTags(prisma);
 
   console.log('Banco de dados preenchido com dados padrão.');
 }

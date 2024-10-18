@@ -1,6 +1,5 @@
 import { PrismaClient } from '@prisma/client';
-const prisma = new PrismaClient();
-export async function SeedFields() {
+export async function SeedFields(prisma: PrismaClient) {
   const fields = [
     {
       name: 'Ciências Físicas, Matemática e Tecnologia',
