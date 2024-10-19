@@ -21,3 +21,17 @@ model TbUsuario {
   senha    String
   id_papel Int
 }
+
+model TbTags {
+  id         String   @id @default(uuid())
+  name       String
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+}
+
+model TbField {
+  id         String   @id @default(uuid())
+  name       String
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+}
